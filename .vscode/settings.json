@@ -1,0 +1,71 @@
+{
+	// Настройки для Git
+	"git.autoRepositoryDetection": "subFolders", // Включает автоматическое обнаружение репозиториев Git в подпапках
+
+	// Настройки навигации
+	"breadcrumbs.enabled": true, // Включает навигационную цепочку (breadcrumbs)
+
+	// Настройки для Python
+	"python.languageServer": "Pylance", // Устанавливает Pylance в качестве языкового сервера Python
+	"python.analysis.typeCheckingMode": "basic", // Включает базовую проверку типов Python
+	"python.analysis.diagnosticSeverityOverrides": {
+		"reportGeneralTypeIssues": "information"
+	},
+	"python.analysis.diagnosticMode": "workspace", // Устанавливает режим диагностики Python на "рабочее пространство"
+	"python.analysis.autoSearchPaths": true, // Включает автоматический поиск путей Python
+	"python.analysis.autoImportCompletions": true, // Включает автоматическое завершение импорта Python
+	"python.analysis.completeFunctionParens": true, // Включает автоматическое добавление скобок при завершении функций Python
+	"python.analysis.inlayHints.variableTypes": true, // Включает подсказки типов переменных Python
+	"python.analysis.inlayHints.functionReturnTypes": true, // Включает подсказки типов возвращаемых значений функций Python
+	"python.analysis.importFormat": "absolute", // Устанавливает формат импорта Python на "абсолютный"
+	"python.analysis.enablePytestSupport": true, // Включает поддержку Pytest для анализа Python
+	"python.analysis.indexing": true, // Включает индексацию Python
+	"python.analysis.packageIndexDepths": [
+		// Настраивает глубину индексации пакетов Python
+		{
+			"name": "telethon", // Имя пакета telethon
+			"depth": 3, // Глубина индексации
+			"includeAllSymbols": true // Включает индексацию всех символов
+		},
+		{
+			"name": "openpyxl", // Имя пакета openpyxl
+			"depth": 3, // Глубина индексации
+			"includeAllSymbols": true // Включает индексацию всех символов
+		},
+		{
+			"name": "PySide6", // Имя пакета openpyxl
+			"depth": 3, // Глубина индексации
+			"includeAllSymbols": true // Включает индексацию всех символов
+		}
+	],
+
+	// Настройки форматирования Python
+	"[python]": {
+		"editor.defaultFormatter": "charliermarsh.ruff" // Назначаем Ruff основным форматтером для Python
+	},
+
+	// Исключение файлов из проводника
+	"files.exclude": {
+		// "venv/": true, // Исключает папку виртуального окружения (по желанию)
+		//"**/__pycache__/": true, // Исключает папку с кэшем Python
+		//"*.pyc": true // Исключает скомпилированные файлы Python
+	},
+	"cSpell.words": [
+		"ГГГГ",
+		"подгрузится",
+		"просм",
+		"шник",
+		"colorama",
+		"coro",
+		"cryptg",
+		"openpyxl",
+		"pyaes",
+		"pyasn",
+		"qrcode",
+		"shiboken",
+		"timespec",
+		"tzdata",
+		"userinfobot",
+		"xmlfile"
+	]
+}

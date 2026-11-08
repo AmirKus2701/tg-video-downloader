@@ -1,7 +1,28 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
 *$py.class
+=======
+# Мои файлы
+/videos/*
+/posts/*
+
+/.continue
+session.session
+session.session-journal
+
+channels.csv
+0_tree.txt
+make_tree.py
+
+# Python.gitignore
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+*.py[codz]
+*$py.class
+*.pyc
+>>>>>>> 45be7c1 (см. 08.11.2026 13:21 (main), вместе с 11:09)
 
 # C extensions
 *.so
@@ -217,4 +238,8 @@ marimo/_lsp/
 __marimo__/
 
 # Streamlit
+<<<<<<< HEAD
 .streamlit/secrets.toml
+=======
+.streamlit/secrets.toml
+>>>>>>> 45be7c1 (см. 08.11.2026 13:21 (main), вместе с 11:09)
